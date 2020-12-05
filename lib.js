@@ -1,5 +1,5 @@
 let adventofcode = {
-    days: 2,
+    days: 3,
     init: function() {
         for (let day = 1; day <= this.days; day++) {
             let filepath = day.toString().padStart(2, "0") + "/solve.js";

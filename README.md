@@ -1,5 +1,5 @@
-# Advent of Code 2019
-http://adventofcode.com/2019
+# Advent of Code 2020
+http://adventofcode.com/2020
 
 ## Goals
 
@@ -17,10 +17,4 @@ http://adventofcode.com/2019
 
 ## Gimmicks
 
-Some days produce graphical output using generated SVG:
-
-* day 3: wire diagram and crossings
-* day 8: password shown in space image
-* day 11: painted hull
-* day 13: game screen
-* day 15: the maze
+t.b.a.

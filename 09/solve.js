@@ -24,6 +24,7 @@ adventofcode.day9_part2 = function(input) {
             } else if (sum === broken_number) {
                 break outer;
             }
+        }
     }
 
     const summands = numbers.slice(i, j+1);

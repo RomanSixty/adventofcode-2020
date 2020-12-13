@@ -38,6 +38,7 @@ adventofcode.day12_part2 = function(input) {
     let waypoint      = [-1, 10];
 
     nav_code.forEach(code => {
+        // counterclockwise to clockwise conversion
         if (code[0] === 'L') {
             code[0] = 'R';
 
@@ -62,25 +63,11 @@ adventofcode.day12_part2 = function(input) {
                 break;
 
             case 'R':
-                let new_waypoint = [];
-
                 switch (code[1]) {
-                    case 90:
-                        new_waypoint[0] =  waypoint[1];
-                        new_waypoint[1] = -waypoint[0];
-                        break;
-                    case 180:
-                        new_waypoint[0] = -waypoint[0];
-                        new_waypoint[1] = -waypoint[1];
-                        break;
-                    case 270:
-                        new_waypoint[0] = -waypoint[1];
-                        new_waypoint[1] =  waypoint[0];
-                        break;
+                    case  90: waypoint = [ waypoint[1], -waypoint[0]]; break;
+                    case 180: waypoint = [-waypoint[0], -waypoint[1]]; break;
+                    case 270: waypoint = [-waypoint[1],  waypoint[0]]; break;
                 }
-
-                waypoint = new_waypoint;
-
                 break;
         }
     });
